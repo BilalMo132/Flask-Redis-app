@@ -1,0 +1,8 @@
+services:
+  web:
+    image: bilalmo132/my-flask-app:multistage3
+    ports:
+      - "5000:5000"
+    depends_on:
+      - 
+
