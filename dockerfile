@@ -36,7 +36,7 @@
 
 FROM python:3.10-slim
 
-WORKDIR /redis-app
+WORKDIR /app
 
 # copy requirements.txt and install dependencies
 
@@ -47,4 +47,4 @@ COPY . .
 
 EXPOSE 5000
 
-CMD ["python", "redis-app.py"]
+CMD ["python", "count.py"]

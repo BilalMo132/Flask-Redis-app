@@ -1,8 +1,13 @@
+version: '3.10'
 services:
   web:
-    image: bilalmo132/my-flask-app:multistage3
+    build: .
     ports:
       - "5000:5000"
     depends_on:
-      - 
+      - redis_host
+  redis_host:
+     image: "redis:latest"
+     ports:
+     - "6379:6379"
 
