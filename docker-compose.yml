@@ -1,18 +1,27 @@
-version: '3.10'
 services:
   web:
     build: .
     ports:
-      - "5000:5000"
+      - "5000"
     depends_on:
       - redis_host
+    environment:
+      - REDIS_HOST=redis_host
+      - REDIS_PORT=6379
   redis_host:
      image: "redis:latest"
-     ports:
-     - "6379:6379"
      volumes:
      - redis-data:/data
-    
+  nginx:
+    image: nginx:latest
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf
+    depends_on:
+      - web
+    ports:
+      - 80:80
+
 volumes:
    redis-data:
       driver: local
+  
