@@ -250,8 +250,7 @@ the shared Redis backend correctly centralises state across replicas.
 ## Running It Yourself
 
 ```bash
-git clone [your repo URL]
-cd [repo name]
+git clone https://github.com/BilalMo132/Flask-Redis-app.git
 docker compose up --build --scale web=3
 ```
 
