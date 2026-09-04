@@ -147,10 +147,10 @@ docker compose up --scale web=3
 
 **Verification performed:**
 
-```
+
 ![Architecture diagram](./assets/verify.png)
 
-```
+
 
 Redis was deliberately **not** scaled — all Flask replicas share a
 single Redis instance so the visit counter stays consistent regardless
@@ -221,10 +221,10 @@ for i in {1..10}; do curl http://localhost/count; echo; done
 
 **Output:**
 
-```
+
 <img width="860" height="201" alt="image" src="https://github.com/user-attachments/assets/3928300b-10af-4da9-984e-856f3aabc842" />
 
-```
+
 
 The differing hostnames across requests confirm nginx's is spreading load across all three `web`
 containers, while the visit count increments consistently — confirming
