@@ -8,7 +8,7 @@ horizontal scaling, and load balancing — all with Docker Compose.
 
 ## Architecture
 
-![Architecture diagram](./assets/Architecture.png)
+![Architecture diagram](./assets/Architecture.drawio.png)
 
 ---
 
