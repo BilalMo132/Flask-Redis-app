@@ -148,7 +148,8 @@ docker compose up --scale web=3
 **Verification performed:**
 
 
-![Architecture diagram](./assets/verify.png)
+<img width="1321" height="88" alt="image" src="https://github.com/user-attachments/assets/99459594-293f-4834-aa58-1ab65fbd08e5" />
+
 
 
 
