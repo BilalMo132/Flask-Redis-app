@@ -1,6 +1,7 @@
 import os
 from flask import Flask
 import redis
+import socket
 
 app = Flask(__name__)
 redis_host = os.environ.get('REDIS_HOST', 'redis')
@@ -14,7 +15,7 @@ def welcome():
 @app.route('/count')
 def count():
     count = r.incr('visits')
-    return f"This page has been visited {count} times."
+    return f"This page has been visited {count} times. served by {socket.gethostname()}."
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000)
