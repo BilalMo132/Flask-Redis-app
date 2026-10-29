@@ -275,7 +275,7 @@ Deliberate scope decisions / things identified but not (yet) implemented:
 
 ## What I Learned
 
-Coming from an It support background, most of my prior exposure has been reactive, 
+Coming from an IT support background, most of my prior exposure has been reactive, 
 not having actually built the infrastructure i deal with day to day, 
 this project gave me an understanding of what goes on in the background and 
 it was very fun to actually design and implement the general structure of albeit small web app
